@@ -29,6 +29,7 @@ Email(First Author): ayushi.dutta@research.iiit.ac.in
 * Pending code clean up
 * Update readme
 * Add trained models
+* Visualization notebook
 
 
 
