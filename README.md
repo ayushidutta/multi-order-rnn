@@ -4,6 +4,8 @@
 
 ## Overview
 
+![Multi-Order-RNN Preview](https://github.com/ayushidutta/multi-order-rnn/blob/master/assets/images/multi-order-rnn-preview.png)
+
 ## Requirements
 
 ## Data Preparation
@@ -12,7 +14,7 @@
 
 ## Testing
 
-## Trained model
+## Trained models
 
 ## Citation
 
