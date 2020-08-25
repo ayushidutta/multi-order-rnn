@@ -12,6 +12,8 @@
 
 ## Testing
 
+## Trained model
+
 ## Citation
 
 If you find our work useful in your research, please cite:
@@ -22,7 +24,7 @@ Email(First Author): ayushi.dutta@research.iiit.ac.in
 
 ## TODOs
 
-* Some Code up
+* Pending code clean up
 * Update readme
 * Add trained models
 
