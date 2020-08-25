@@ -16,10 +16,15 @@
 
 If you find our work useful in your research, please cite:
 
+## Contact
+
+Email(First Author): ayushi.dutta@research.iiit.ac.in
+
 ## TODOs
 
-* Refactor Code
+* Some Code up
 * Update readme
+* Add trained models
 
 
 
