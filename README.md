@@ -1,2 +1,6 @@
-# multi-order-rnn
-This repo contains code for our paper 'Multi Order RNN' in ECCV 2020
+# Recurrent Image Annotation With Explicit Inter-Label Dependencies
+
+### In ECCV 2020 [paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123740188.pdf)
+
+# Overview
+
