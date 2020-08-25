@@ -18,7 +18,8 @@ If you find our work useful in your research, please cite:
 
 ## TODOs
 
-* Update ReadMe
+* Refactor Code
+* Update readme
 
 
 
