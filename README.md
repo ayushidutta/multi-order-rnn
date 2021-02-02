@@ -24,12 +24,4 @@ If you find our work useful in your research, please cite:
 
 Email(First Author): ayushi.dutta@research.iiit.ac.in
 
-### TODOs
-
-* Pending code clean up
-* Update readme
-* Add trained models
-* Visualization notebook
-
-
 
