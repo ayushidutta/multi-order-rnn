@@ -17,7 +17,7 @@
 
 ## Training and Test
 
-To train or test the model, run,
+To train or test the model, 
 
 ```
 python runner.py \
