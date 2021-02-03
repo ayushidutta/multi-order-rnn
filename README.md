@@ -8,6 +8,9 @@
 
 ## Requirements
 
+* Tensorflow 1.3
+* Python 2.7
+
 ## Data Preparation
 
 ## Training
