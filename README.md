@@ -11,7 +11,20 @@
 * Tensorflow 1.3
 * Python 2.7
 
-## Data and Pretrained models
+## Data and trained model
+
+For training and testing the model using this code, the dataset needs to be in Tensorflow's _tfrecord_ format. The _tfrecord_ files contain the: 
+- images
+- annotations i.e. labels
+- CNN prediction probabilities (base CNN trained with sigmoid cross entropy on the same dataset). 
+
+To convert to _tfrecord_ format, use the script:
+```
+python data_utils/download_and_convert_data.py --dataset_name=coco --dataset_dir=../data/coco 
+```
+Please refer to the scripts in _data_utils_ for details. 
+
+The dataset split used by us is given in the _data_ folder. The images can be obtained from the respective dataset pages. The resnet features and prediction probabilities that are used to create the _tfrecord_ files, as well as our model checkpoints, can be downloaded from the following:
 
 
 
@@ -23,7 +36,7 @@ To train or test the model,
 python runner.py \
     --train_dir=${TRAIN_DIR} \
     --dataset_dir=${DATASET_DIR} \
-    --dataset_name=nuswide \
+    --dataset_name=coco \
     --model=lstm_sem_multi_order \
     --dim_hidden=512 \
     --dim_embed=256 \
