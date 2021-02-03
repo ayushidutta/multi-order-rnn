@@ -26,13 +26,13 @@ _DATASET_DIR = '/home/ayushi/Git/research/imageAnnotation/data/coco'
 _SPLIT_NAMES = ['train','test','valid']
 _DATA_FILENAMES = ['coco_train_list.txt','coco_test_list.txt','coco_test_list.txt']
 _LABEL_FILENAMES = ['coco_train_annot.txt','coco_test_annot.txt','coco_test_annot.txt']
-_MODEL_DIR = os.path.join(_DATASET_DIR,'caffe-res1-101')
+_MODEL_DIR = os.path.join(_DATASET_DIR,'net-res1-101')
 _RESULTS_DIR = os.path.join(_MODEL_DIR,'sigmoid_logits')
 _FTR_FILENAMES = ['coco_train_r101.mat','coco_test_r101.mat','coco_test_r101.mat']
 _PROB_FILENAMES = ['coco_train_r101_pred.mat','coco_test_r101_pred.mat','coco_test_r101_pred.mat']
 _NUM_PER_SHARD = 50000
 _IMAGE_DIRECTORY = '/home/ayushi/Git/research/dataset/coco'
-_TFRECORD_SUB_DIRECTORY=os.path.join(_MODEL_DIR,'tfrecord1')
+_TFRECORD_SUB_DIRECTORY=os.path.join(_MODEL_DIR,'tfrecord')
 _CLASSNAMES_FILENAME = 'coco_dict80.txt'
 
 def _get_image_list_by_diversity(image_list, img_annots, how_many_imgs):
@@ -138,7 +138,7 @@ def _convert_to_tfrecord(dataset_dir, split_name,
             image = Image.open(image_path)
             image_ftr = db_ftr[:, sel_images_idx[j]].T
             image_scores = db_scores[sel_images_idx[j], :]
-            example = dataset_utils1.image_to_tfexample(
+            example = dataset_utils.image_to_tfexample(
                 image_string, image.format.encode(), image.size[0],
                 image.size[1], labels[j], image_ftr.tolist(),
                 image_scores.tolist(), image_path)
@@ -183,6 +183,6 @@ def run(dataset_dir=_DATASET_DIR, create_label_dict=False):
       with open(class_filename) as fClassNames:
           class_names = fClassNames.read().splitlines()
       labels_to_class_names = dict(zip(range(len(class_names)), class_names))
-      dataset_utils1.write_label_file(labels_to_class_names, _DATASET_DIR)
+      dataset_utils.write_label_file(labels_to_class_names, _DATASET_DIR)
 
   print('\nFinished converting the NUSWIDE dataset!')

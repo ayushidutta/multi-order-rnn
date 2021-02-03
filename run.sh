@@ -1,15 +1,10 @@
 DATASET_DIR=../data/nuswide/
-TRAIN_DIR=../data/nuswide/net-vgg16/lstm-sem3/nprev_256_512_32
-CHECKPOINT_PATH=../data/pretrained/vgg_16.ckpt
+TRAIN_DIR=../data/nuswide/net-res-101/lstm_sem_multi_order
 python runner.py \
     --train_dir=${TRAIN_DIR} \
     --dataset_dir=${DATASET_DIR} \
     --dataset_name=nuswide \
-    --model_base=vgg_16 \
-    --checkpoint_path=${CHECKPOINT_PATH} \
-    --checkpoint_scopes=vgg_16 \
-    --trainable_scopes=cnn_rnn_att \
-    --model=lstm_sem_v3 \
+    --model=lstm_sem_multi_order \
     --dim_hidden=512 \
     --dim_embed=256 \
     --prev2out=False \

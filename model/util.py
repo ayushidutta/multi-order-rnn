@@ -7,7 +7,7 @@ import tensorflow as tf
 import h5py
 import scipy.io
 
-from eval.multilabel_metrics1 import evaluate_per_row_col_metrics, annotate_topK, annotate_by_probability
+from eval.multilabel_metrics import evaluate_per_row_col_metrics, annotate_topK, annotate_by_probability
 
 _NUM_REC_PREDICT_FILE = 125500
 

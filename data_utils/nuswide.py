@@ -35,8 +35,8 @@ _FILE_PATTERN = 'nus1_%s_*.tfrecord'
 _SPLITS_TO_SIZES = {'train': 125449, 'test': 83898, 'valid': 600}
 _NUM_CLASSES = 81
 _TOP_K = 3
-_TFRECORD_DIR = '/home/ayushi/Lab/imageAnnotation/data/nuswide'
-_TFRECORD_SUB_DIRECTORY='caffe-res1-101/tfrecord'
+_TFRECORD_DIR = '/home/ayushi/Git/research/imageAnnotation/data/nuswide'
+_TFRECORD_SUB_DIRECTORY='net-res1-101/tfrecord'
 _FTR_DIM = 2048
 
 class DatasetReaderFn(object):

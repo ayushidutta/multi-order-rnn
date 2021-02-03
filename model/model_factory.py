@@ -2,11 +2,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from model import model_cnn
 from model import model_lstm_sem_multi_order
 
 model_map = {
-    'cnn': model_cnn,
     'lstm_sem_multi_order': model_lstm_sem_multi_order,
 }
 

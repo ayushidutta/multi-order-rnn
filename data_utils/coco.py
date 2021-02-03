@@ -35,8 +35,8 @@ _FILE_PATTERN = 'coco_%s_*.tfrecord'
 _SPLITS_TO_SIZES = {'train': 82783, 'test': 40504, 'valid': 600}
 _NUM_CLASSES = 80
 _TOP_K = 3
-_TFRECORD_DIR = '/home/ayushi/Lab/imageAnnotation/data/coco'
-_TFRECORD_SUB_DIRECTORY='caffe-res1-101/tfrecord'
+_TFRECORD_DIR = '/home/ayushi/Git/research/imageAnnotation/data/coco'
+_TFRECORD_SUB_DIRECTORY='net-res1-101/tfrecord'
 _FTR_DIM = 2048
 
 class DatasetReaderFn(object):
