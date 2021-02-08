@@ -24,7 +24,7 @@ python data_utils/download_and_convert_data.py --dataset_name=coco --dataset_dir
 ```
 Please refer to the scripts in _data_utils_ for details. 
 
-The dataset split used by us is given in the _data_ folder. The images can be obtained from the respective dataset pages. The resnet features and prediction probabilities that are used to create the _tfrecord_ files, as well as our model checkpoints, can be downloaded from the following:
+The dataset split used by us is given in the _data_ folder. The images can be obtained from the respective dataset pages. The resnet features and prediction probabilities that are used to create the _tfrecord_ files, can be downloaded from the following:
 
 
 
