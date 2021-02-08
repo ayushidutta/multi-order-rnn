@@ -26,7 +26,7 @@ Please refer to the scripts in _data_utils_ for details.
 
 The dataset split used by us is given in the _data_ folder. The images can be obtained from the respective dataset pages. The resnet features and prediction probabilities that are used to create the _tfrecord_ files, can be downloaded from the following:
 
-[data](https://drive.google.com/drive/folders/1kPKXx7DtnVZ4ctoKx17Gl3qiKKtfENfF?usp=sharing)
+[Download data](https://drive.google.com/drive/folders/1kPKXx7DtnVZ4ctoKx17Gl3qiKKtfENfF?usp=sharing)
 
 ## Training and Test
 
