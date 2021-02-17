@@ -53,7 +53,13 @@ The same is provided in the bash script _run.sh_.
 
 ## Citation
 
-If you find our work useful in your research, please cite:
+If you find our work useful in your research, please consider citing us:
+@inproceedings{ayu2020mornn,
+  title   =  {Recurrent Image Annotation With Explicit Inter-Label Dependencies},
+  author  =  {Ayushi Dutta, Yashaswi Verma, C.V. Jawahar},
+  booktitle =  {European Conference on Computer Vision (ECCV)},
+  year    =  {2020}
+}
 
 ## Contact
 
